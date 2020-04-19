@@ -1,0 +1,17 @@
+.cardStyle {
+  height: 4rem;
+  border-bottom: 3px solid #10a796;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+* {
+  padding-top: 0.1rem;
+  padding-bottom: 0.02rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  background: none !important;
+}

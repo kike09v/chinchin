@@ -1,0 +1,55 @@
+.title {
+  font-size: 4.5rem;
+}
+
+.bs {
+  background: #26543d;
+  font-size: 27px;
+  color: white;
+}
+
+.btc {
+  background: #ebb709;
+  font-size: 27px;
+  color: white;
+}
+
+.pt {
+  background: #dd2b2b;
+  font-size: 27px;
+  color: white;
+}
+
+.list-group-item {
+  color: #20c79f;
+  font-size: 22px;
+}
+
+.table {
+  padding-top: 50px;
+}
+
+.badgePendiente {
+  color: #fff;
+  background-color: #ebb709;
+}
+
+.badgeConfig {
+  color: #fff;
+  background-color: #6ed401;
+}
+
+.badgeRechazado {
+  color: #fff;
+  background-color: #dd2b2b;
+}
+
+.badgeStyle {
+  color: #fff;
+  background-color: #16c6a5;
+}
+
+.btn-social {
+  padding-top: 20px;
+  font-size: 40px;
+}

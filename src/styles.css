@@ -1,0 +1,10 @@
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.footer {
+  padding-top: 50px;
+  background: #eff2f4 !important;
+  padding-bottom: 50px;
+}
