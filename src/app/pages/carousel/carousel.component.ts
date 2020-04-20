@@ -13,6 +13,7 @@ export class CarouselComponent implements OnInit {
   public btc;
   public eth;
   public dash;
+  public obj;
   constructor(private marketService: MarketService) {}
 
   ngOnInit(): void {
@@ -22,23 +23,25 @@ export class CarouselComponent implements OnInit {
   getDivisa() {
     this.marketService.getCoins().subscribe((resp) => {
       let i;
-      // for (i = 0; i <= resp.data.length; i++) {
-      //   if (resp.data[i].s == "EURBUSD") {
-      //     this.euro = resp.data[i].h;
-      //   }
+      this.obj = resp["data"];
 
-      //   if (resp.data[i].s == "BTCBUSD") {
-      //     this.btc = resp.data[i].h;
-      //   }
+      for (i = 0; i <= this.obj.length; i++) {
+        if (this.obj[i].s == "EURBUSD") {
+          this.euro = this.obj[i].h;
+        }
 
-      //   if (resp.data[i].s == "ETHBUSD") {
-      //     this.eth = resp.data[i].h;
-      //   }
+        if (this.obj[i].s == "BTCBUSD") {
+          this.btc = this.obj[i].h;
+        }
 
-      //   if (resp.data[i].s == "DASHBUSD") {
-      //     this.dash = resp.data[i].h;
-      //   }
-      // }
+        if (this.obj[i].s == "ETHBUSD") {
+          this.eth = this.obj[i].h;
+        }
+
+        if (this.obj[i].s == "DASHBUSD") {
+          this.dash = this.obj[i].h;
+        }
+      }
     });
   }
 }
