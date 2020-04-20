@@ -40,9 +40,6 @@ export class CarouselComponent implements OnInit {
             this.dash = resp.data[i].h;
           }
         }
-      },
-      (err) => {
-        console.log(err);
       }
     );
   }
