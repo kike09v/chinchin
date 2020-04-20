@@ -1,0 +1,7 @@
+{
+    "/exchange-api/*":{
+        "target": "https://www.binance.com",
+        "secure": false,
+        "changeOrigin": true
+    }
+}
