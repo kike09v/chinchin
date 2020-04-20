@@ -22,23 +22,23 @@ export class CarouselComponent implements OnInit {
   getDivisa() {
     this.marketService.getCoins().subscribe((resp) => {
       let i;
-      for (i = 0; i <= resp.data.length; i++) {
-        if (resp.data[i].s == "EURBUSD") {
-          this.euro = resp.data[i].h;
-        }
+      // for (i = 0; i <= resp.data.length; i++) {
+      //   if (resp.data[i].s == "EURBUSD") {
+      //     this.euro = resp.data[i].h;
+      //   }
 
-        if (resp.data[i].s == "BTCBUSD") {
-          this.btc = resp.data[i].h;
-        }
+      //   if (resp.data[i].s == "BTCBUSD") {
+      //     this.btc = resp.data[i].h;
+      //   }
 
-        if (resp.data[i].s == "ETHBUSD") {
-          this.eth = resp.data[i].h;
-        }
+      //   if (resp.data[i].s == "ETHBUSD") {
+      //     this.eth = resp.data[i].h;
+      //   }
 
-        if (resp.data[i].s == "DASHBUSD") {
-          this.dash = resp.data[i].h;
-        }
-      }
+      //   if (resp.data[i].s == "DASHBUSD") {
+      //     this.dash = resp.data[i].h;
+      //   }
+      // }
     });
   }
 }
